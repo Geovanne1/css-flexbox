@@ -1,2 +1,2 @@
-# css-flexbox
- criando o estilo com flex
+# dispondo-elementos-com-flexbox-e-grind
+ flexbox-e-grind

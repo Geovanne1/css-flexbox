@@ -1,153 +1,188 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="pr-br">
 <head>
-	<meta lang="pt-br">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Alurinha | Cursos online</title>
+	<title>HZC | Home</title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/flexbox.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-
-	<header class="cabecalhoPrincipal">
-		<div class="container">
-			<h1 class="cabecalhoPrincipal-titulo">
-				<a href="#">Alurinha</a>
-			</h1>
-
-			<nav class="cabecalhoPrincipal-nav">
-				<a class="cabecalhoPrincipal-nav-link" href="#">Home</a>
-				<a class="cabecalhoPrincipal-nav-link" href="#">Cursos</a>
-				<a class="cabecalhoPrincipal-nav-link" href="#">Sobre nós</a>
-				<a class="cabecalhoPrincipal-nav-link" href="#">Contato</a>
-				<a class="cabecalhoPrincipal-nav-link cabecalhoPrincipal-nav-link-app" href="#">Nosso APP</a>
-			</nav>
-		</div>
-
+	<header class="cabecalho">
+		<button class="cabecalho__menu" aria-label="menu"><i></i></button>
+		<img src="img/logo.svg" alt="logotipo da HZC" class="cabecalho__logo">
+		<p class="cabecalho__perfil">Bruno Lopez</p>
+		<button class="cabecalho__notificacao" aria-label="notificação"><i></i></button>
 	</header>
-
-	<main class="conteudoPrincipal">
-		<div class="container">
-			<h2 class="subtitulo">Nossos cursos</h2>
-
-			<nav>
-				<ul class="conteudoPrincipal-cursos">
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Java</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">PHP</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Ruby on Rails</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">.NET</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Pascal</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Flexbox</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Desenvolvimento Web</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Java Web</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Javascript</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">AngularJS</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">TDD com C</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Redes de computadores</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">MySQL</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">MariaDB</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Postegres</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Lógica de programação</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Lógica de programação</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Lógica de programação</a></li>
-				</ul>
-			</nav>
-		</div>
-
-		<section class="videoSobre">
-			<div class="container">
-				<iframe class="videoSobre-video" width="560" height="315" src="https://www.youtube.com/embed/bIlOsJzBVaY?list=PLh2Y_pKOa4UcF1BYPJR3EIMRi3nWAUxIp" frameborder="0" allowfullscreen></iframe>
-				
-				<div class="videoSobre-sobre">
-					<h2 class="videoSobre-sobre-title">Vantagens do Alurinha</h2>
-					<ul class="videoSobre-sobre-list">
-						<li class="videoSobre-sobre-item">Estude onde quiser</li>
-						<li class="videoSobre-sobre-item">Novos cursos todos os meses</li>
-						<li class="videoSobre-sobre-item">Cursos compatíveis com o mercado</li>
-					</ul>
-					<button class="videoSobre-button">Cadastre-se já</button>
+	<nav class="menu-lateral">
+		<img src="img/logo.svg" alt="" class="menu-lateral__logo">
+		<a href="#" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo">Início</a>
+		<a href="#" class="menu-lateral__link menu-lateral__link--videos">Videos</a>
+		<a href="pico.html" class="menu-lateral__link menu-lateral__link--picos">Picos</a>
+		<a href="#" class="menu-lateral__link menu-lateral__link--integrantes">Integrantes</a>
+		<a href="#" class="menu-lateral__link menu-lateral__link--camisas">Camisas</a>
+		<a href="#" class="menu-lateral__link menu-lateral__link--pinturas">Pinturas</a>
+	</nav>
+	<main class="principal">
+		<h2 class="titulo-pagina">Início</h2>
+		<article class="cartao cartao--destaque destaque-video">
+			<img src="img/banner-mobile_1.png" alt="Banner do cartão" class="cartao__imagem cartao__imagem--mobile">
+			<img src="img/banner_1.png" alt="Banner do cartão" class="cartao__imagem cartao__imagem--desktop" > 
+				<div class="cartao__conteudo">
+					<p class="cartao__destaque">Vídeo em destaque</p>
+					<h3 class="cartao__titulo">HZC - Life is.../2021</h3>
+					<p class="cartao__perfil">Bruno Lopez</p>
+					<p class="cartao__info cartao__info--tempo">33 minutos</p>
+					<p class="cartao__info cartao__info--visualizacao">53 visualizações</p>
+					<button class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</button>
 				</div>
-			</div>
+		</article>
+		<article class="cartao cartao--recentes videos-recentes">
+			<h3 class="cartao__titulo">Vídeos recentes</h3>
+			<a href="#" class="cartao__link">Ver todos</a>
+			<ul class="cartao__lista">
+				<li class="cartao__item">
+					<img src="img/miniatura_1.png" alt="thumbnail" class="cartao__item-thumbnail">
+					<h4 class="cartao__item-titulo">HZC - love machine</h4>
+				</li>
+				<li class="cartao__item">
+					<img src="img/miniatura_1.png" alt="thumbnail" class="cartao__item-thumbnail">
+					<h4 class="cartao__item-titulo">HZC - love machine</h4>
+				</li>
+				<li class="cartao__item">
+					<img src="img/miniatura_1.png" alt="thumbnail" class="cartao__item-thumbnail">
+					<h4 class="cartao__item-titulo">HZC - love machine</h4>
+				</li>
+				<li class="cartao__item">
+					<img src="img/miniatura_1.png" alt="thumbnail" class="cartao__item-thumbnail">
+					<h4 class="cartao__item-titulo">HZC - love machine</h4>
+				</li>
+				<li class="cartao__item">
+					<img src="img/miniatura_1.png" alt="thumbnail" class="cartao__item-thumbnail">
+					<h4 class="cartao__item-titulo">HZC - love machine</h4>
+				</li>
+			</ul>
+		</article>
+		<section class="secao secao-videos">
+			<h3 class="titulo-secao">Vídeos mais vistos</h3>
+			<article class="cartao">
+			<img src="img/video_1.png" alt="video" class="cartao__imagem"></img>
+				<div class="cartao__conteudo">
+					<p class="cartao__perfil">André Soares</p>
+					<h3 class="cartao__titulo">HZC - Tudo sem padrin</h3>
+					<p class="cartao__info cartao__info--tempo">33 minutos</p>
+					<button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+				</div>
+			</article>
+			<article class="cartao">
+			<img src="img/video_2.png" alt="video" class="cartao__imagem"></img>
+				<div class="cartao__conteudo">
+					<p class="cartao__perfil">Bruno Lopez</p>
+					<h3 class="cartao__titulo">HZC - Enter the Hu-flez</h3>
+					<p class="cartao__info cartao__info--tempo">33 minutos</p>
+					<button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+				</div>
+			</article>
+			<article class="cartao">
+			<img src="img/video_3.png" alt="video" class="cartao__imagem"></img>
+				<div class="cartao__conteudo">
+					<p class="cartao__perfil">Luiza Sampaio</p>
+					<h3 class="cartao__titulo">HZC - Vol.3</h3>
+					<p class="cartao__info cartao__info--tempo">33 minutos</p>
+					<button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+				</div>
+			</article>
+			<article class="cartao">
+			<img src="img/video_4.png" alt="video" class="cartao__imagem"></img>
+				<div class="cartao__conteudo">
+					<p class="cartao__perfil">Bruno Lopez</p>
+					<h3 class="cartao__titulo">HZC - Love Machine</h3>
+					<p class="cartao__info cartao__info--tempo">33 minutos</p>
+					<button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+				</div>
+			</article>
 		</section>
-
+		<article class="cartao cartao--recentes produtos-recentes">
+			<h3 class="cartao__titulo">Vídeos recentes</h3>
+			<a href="#" class="cartao__link">Ver todos</a>
+			<ul>
+				<li class="cartao__item">
+					<img src="img/miniatura_1.png" alt="thumbnail" class="cartao__link-thumbnail">
+					<h4 class="cartao__link-titulo">HZC - love machine</h4>
+				</li>
+				<li class="cartao__item">
+					<img src="img/miniatura_1.png" alt="thumbnail" class="cartao__link-thumbnail">
+					<h4 class="cartao__link-titulo">HZC - love machine</h4>
+				</li>
+				<li class="cartao__item">
+					<img src="img/miniatura_1.png" alt="thumbnail" class="cartao__link-thumbnail">
+					<h4 class="cartao__link-titulo">HZC - love machine</h4>
+				</li>
+				<li class="cartao__item">
+					<img src="img/miniatura_1.png" alt="thumbnail" class="cartao__link-thumbnail">
+					<h4 class="cartao__link-titulo">HZC - love machine</h4>
+				</li>
+				<li class="cartao__item">
+					<img src="img/miniatura_1.png" alt="thumbnail" class="cartao__link-thumbnail">
+					<h4 class="cartao__link-titulo">HZC - love machine</h4>
+				</li>
+			</ul>
+		</article>
+		<article class="cartao cartao--destaque destaque-produtos">
+			<img src="img/banner-mobile_2.png" alt="Banner do cartão" class="cartao__imagem cartao__imagem--mobile">
+			<img src="img/banner_2.png" alt="Banner do cartão" class="cartao__imagem cartao__imagem--desktop">
+				<div class="cartao__conteudo">
+					<p class="cartao__destaque">Nova arte</p>
+					<h3 class="cartao__titulo">Only Zikas-Lagoa Dompa Club</h3>
+					<p class="cartao__perfil">Bruno Lopez</p>
+					<p class="cartao__info cartao__info--dinheiro">33,33</p>
+					<p class="cartao__info cartao__info--visualizacao">53 visualizações</p>
+					<button class="cartao__botao cartao__botao--loja cartao__botao--destaque">Comprar agora</button>
+				</div>
+		</article>
+		<section class="secao secao-produtos">
+			<h3 class="titulo-secao">Camisas mais recentes</h3>
+			<article class="cartao">
+			<img src="img/produto_1.png" alt="video" class="cartao__imagem"></img>
+				<div class="cartao__conteudo">
+					<p class="cartao__perfil">Bruno Lopez</p>
+					<h3 class="cartao__titulo">HZC - Título</h3>
+					<p class="cartao__info cartao__info--dinheiro">33,33</p>
+					<button class="cartao__botao cartao__botao--loja" aria-label="Comprar agora"></button>
+				</div>
+			</article>
+			<article class="cartao">
+			<img src="img/produto_2.png" alt="video" class="cartao__imagem"></img>
+				<div class="cartao__conteudo">
+					<p class="cartao__perfil">Bruno Lopez</p>
+					<h3 class="cartao__titulo">Huflez Crew Philosophy Club</h3>
+					<p class="cartao__info cartao__info--dinheiro">33,33</p>
+					<button class="cartao__botao cartao__botao--loja" aria-label="Comprar agora"></button>
+				</div>
+			</article>
+			<article class="cartao">
+			<img src="img/produto_3.png" alt="video" class="cartao__imagem"></img>
+				<div class="cartao__conteudo">
+					<p class="cartao__perfil">Bruno Lopez</p>
+					<h3 class="cartao__titulo">Corujita noturna</h3>
+					<p class="cartao__info cartao__info--dinheiro">33,33</p>
+					<button class="cartao__botao cartao__botao--loja" aria-label="Comprar agora"></button>
+				</div>
+			</article>
+			<article class="cartao">
+			<img src="img/produto_4.png" alt="video" class="cartao__imagem"></img>
+				<div class="cartao__conteudo">
+					<p class="cartao__perfil">Bruno Lopez</p>
+					<h3 class="cartao__titulo">GGG-Gatin G Gorro</h3>
+					<p class="cartao__info cartao__info--dinheiro">33,33</p>
+					<button class="cartao__botao cartao__botao--loja" aria-label="Comprar agora"></button>
+				</div>
+			</article>
+		</section>
 	</main>
-
-	<footer class="rodapePrincipal">
-		<div class="container">
-
-			<section class="rodapePrincipal-navMap">
-				<h3 class="subtitulo">Mapa de cursos</h3>
-				<nav class="rodapePrincipal-navMap-list">
-
-					<h4 class="navmap-list-title navmap-list-title-backend">Linguagens Backend</h4>
-					<a class="rodapePrincipal-navMap-link" href="#">Java</a>
-					<a class="rodapePrincipal-navMap-link" href="#">PHP</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Pascal</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Scala</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Python</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Java Web</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Assembly</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Lógica de programação</a>
-
-					<h4 class="navmap-list-title navmap-list-title-frontend">Linguagens Frontend</h4>
-					<a class="rodapePrincipal-navMap-link" href="#">Flexbox</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Desenvolvimento Web</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Javascript</a>
-					<a class="rodapePrincipal-navMap-link" href="#">AngularJS</a>
-					<a class="rodapePrincipal-navMap-link" href="#">ReactJS</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Polymer</a>
-					
-					<h4 class="navmap-list-title navmap-list-title-framework">Frameworks</h4>
-					<a class="rodapePrincipal-navMap-link" href="#">Ruby on Rails</a>
-					<a class="rodapePrincipal-navMap-link" href="#">VRaptor</a>
-					<a class="rodapePrincipal-navMap-link" href="#">SpringMVC</a>
-					<a class="rodapePrincipal-navMap-link" href="#">NodeJS</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Django</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Bootstrap3</a>
-
-					<h4 class="navmap-list-title navmap-list-title-bancoDeDados">Banco de dados</h4>
-					<a class="rodapePrincipal-navMap-link" href="#">MySQL</a>
-					<a class="rodapePrincipal-navMap-link" href="#">MariaDB</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Postegres</a>
-
-				</nav>
-			</section>
-
-		</div>
-
-		<section class="rodapePrincipal-patrocinadores">
-			<div class="container">
-				<ul class="rodapePrincipal-patrocinadores-list">
-					<li>
-						<a class="rodapePrincipal-patrocinadores-list-link patrocinadores-list-link-alura" href="#">
-							<img src="img/logos/alura.svg" alt="Logo da Alura">
-						</a>
-					</li>
-					<li>
-						<a class="rodapePrincipal-patrocinadores-list-link patrocinadores-list-link-caelum" href="#">
-							<img src="img/logos/caelum.svg" alt="Logo da Caelum">
-						</a>
-					</li>
-					<li>
-						<a class="rodapePrincipal-patrocinadores-list-link patrocinadores-list-link-casaDoCodigo" href="#">
-							<img src="img/logos/cdc.svg" alt="Logo da Casa do Código">
-						</a>
-					</li>
-				</ul>
-				<form class="rodapePrincipal-contatoForm" action="#">
-					<fieldset>
-						<legend class="rodapePrincipal-contatoForm-legend" for="email-contato">Entre em contato conosco</legend>
-						<div class="rodapePrincipal-contatoForm-fieldset"> 
-							<input class="rodapePrincipal-contatoForm-emailInput" type="email" name="email-contato" id="email-contato">
-							<button class="rodapePrincipal-contatoForm-submit" type="submit">Enviar</button>
-						</div>
-					</fieldset>
-				</form>
-			</div>
-		</section>
-	</footer>
-
+	<script src="javascript/index.js"></script>
 </body>
 </html>

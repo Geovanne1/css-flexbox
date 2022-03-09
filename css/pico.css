@@ -1,0 +1,45 @@
+.pico-conteudo {
+	padding: 0px 16px;
+}
+
+.pico__imagem {
+	width: 750px;
+}
+
+.cartao__botao--local::before {
+	content: "\e908";
+	font-size: 20px;
+}
+
+.cartao__artigo {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 8px;
+}
+
+.artigo__imagem {
+	grid-column: 1 / span 2;
+}
+
+.artigo__perfil {
+	grid-column: 1 / span 2;
+}
+
+.artigo__perfil::before {
+		content: "";
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		background-image: url(../img/profile_2.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+}
+
+.conteudo__artigo {
+	grid-column: 1 / span 2;
+}
+
+.info__artigo {
+	grid-column: 2;
+}
